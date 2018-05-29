@@ -1,7 +1,11 @@
 hrs=input('enter hours:\n')
-rte=input('enter rate:\n')
 try:
     H=float(hrs)
+except:
+    print('error, enter numeric input')
+    quit()
+rte=input('enter rate:\n')
+try:
     R=float(rte)
 except:
     print('error, enter numeric input')
